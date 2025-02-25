@@ -2,7 +2,7 @@ class Flite < Formula
   desc "Small, fast speech synthesis engine (text-to-speech)"
   homepage "https://github.com/festvox/flite"
   url "https://github.com/festvox/flite/archive/refs/tags/v2.2.tar.gz"
-  sha256 "ab1555fe5adc3f99f1d4a1465f0f84e3083b5b4b949df2d21961a02833d7a04c"
+  sha256 "ab1555fe5adc3f99f1d4a1a0eb1596d329fd6d74f1464a0097c81f53c0cf9e5c"
   license "BSD-3-Clause"
 
   depends_on "autoconf" => :build
