@@ -9,6 +9,8 @@ class Flite < Formula
   depends_on "automake" => :build
   depends_on "libtool" => :build
 
+  patch :DATA
+
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
