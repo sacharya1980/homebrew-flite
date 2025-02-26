@@ -17,10 +17,16 @@ class Flite < Formula
                           "--prefix=#{prefix}"
     system "make"
     system "make", "install"
+
+    cd "testsuite" do
+      system "make", "lex_lookup"
+      bin.install "lex_lookup"
+    end
   end
 
   test do
     system "#{bin}/flite", "-t", "Hello Homebrew!"
+    system "#{bin}/lex_lookup", "--help"
   end
 end
 
